@@ -44,11 +44,11 @@
                 <input type="text" id="input">
             </div><br>
             <div id="btn-oparator">
-                <Button onclick="plus()">+</Button>
-                <Button onclick="minus()">-</Button>
-                <Button onclick="divided()">/</Button>
-                <Button onclick="modulas()">%</Button>
-                <Button onclick="multiply()">*</Button>
+                <Button id="add">+</Button>
+                <Button id="min">-</Button>
+                <Button id="div">/</Button>
+                <Button id="mod">%</Button>
+                <Button id="mul">*</Button>
               
             </div>
 
@@ -65,7 +65,7 @@
                     <button id="8">8</button><br>
                     <button id="9">9</button>
                     <button id="0">0</button>
-                    <button id="0">00</button>
+                    <button id="00">00</button>
                     <Button style="background-color:lightslategray;" id="equal">=</Button>
 
                 </div>
@@ -83,19 +83,50 @@
         document.getElementById('2').addEventListener("click", function(){
             const out=document.getElementById('input');
             out.value=parseInt('2');
-           
         });
+        document.getElementById('3').addEventListener("click", function(){
+            const out=document.getElementById('input');
+            out.value=parseInt('3');
+        });
+        document.getElementById('4').addEventListener("click", function(){
+            const out=document.getElementById('input');
+            out.value=parseInt('4');
+        });
+        document.getElementById('5').addEventListener("click", function(){
+            const out=document.getElementById('input');
+            out.value=parseInt('5');
+        });
+        document.getElementById('6').addEventListener("click", function(){
+            const out=document.getElementById('input');
+            out.value=parseInt('6');
+        });
+        document.getElementById('7').addEventListener("click", function(){
+            const out=document.getElementById('input');
+            out.value=parseInt('7');
+        });
+        document.getElementById('8').addEventListener("click", function(){
+            const out=document.getElementById('input');
+            out.value=parseInt('8');
+        });
+        document.getElementById('9').addEventListener("click", function(){
+            const out=document.getElementById('input');
+            out.value=parseInt('9');
+        });
+        document.getElementById('0').addEventListener("click", function(){
+            const out=document.getElementById('input');
+            out.value=parseInt('0');
+        });
+        
 
 
 
 
-         function plus(){
-            const add=document.getElementById('add');
-            const out=document.getElementById('input').value=add;
-            
-           
+        document.getElementById('add').addEventListener("click", function add(){
+            const add=document.getElementById('add').innerText;
+            const out=document.getElementById('input');
+            out.value=add;
           
-        }
+        });
         document.getElementById('equal').addEventListener("click", function add(){
             const equal=document.getElementById('equal').innerText;
             const out=document.getElementById('input');
