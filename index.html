@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        fieldset {
+            position: absolute;
+            height: 300px;
+        }
+
+        #input-field input {
+            width: 300px;
+            height: 40px;
+        }
+
+        #btn-oparator Button {
+            padding: 5px 17px 5px 17px;
+            font-size: 20px;
+            background: lightblue;
+
+        }
+        .number{
+
+            display: grid;
+            grid-template-columns:auto auto auto auto;
+            
+        }
+        #number button{
+            padding: 5px 20px 5px 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <h2 style="text-align: center;">Calculator</h2>
+        <div>
+            <div id="input-field">
+                <input type="text" id="input">
+            </div><br>
+            <div id="btn-oparator">
+                <Button onclick="plus()">+</Button>
+                <Button onclick="minus()">-</Button>
+                <Button onclick="divided()">/</Button>
+                <Button onclick="modulas()">%</Button>
+                <Button onclick="multiply()">*</Button>
+              
+            </div>
+
+            <div id="number">
+                
+                    <button id="1">1</button>
+                    <button id="2">2</button>
+                    <button id="3">3</button>
+                    <button id="4">4</button><br>
+                          
+                    <button id="5">5</button>
+                    <button id="6">6</button>
+                    <button id="7">7</button>
+                    <button id="8">8</button><br>
+                    <button id="9">9</button>
+                    <button id="0">0</button>
+                    <button id="0">00</button>
+                    <Button style="background-color:lightslategray;" id="equal">=</Button>
+
+                </div>
+            </div>
+
+        </div>
+    </fieldset>
+
+    <script>
+       
+        document.getElementById('1').addEventListener("click", function(){
+            const out=document.getElementById('input');
+            out.value=parseInt('1');
+        });
+        document.getElementById('2').addEventListener("click", function(){
+            const out=document.getElementById('input');
+            out.value=parseInt('2');
+           
+        });
+
+
+
+
+         function plus(){
+            const add=document.getElementById('add');
+            const out=document.getElementById('input').value=add;
+            
+           
+          
+        }
+        document.getElementById('equal').addEventListener("click", function add(){
+            const equal=document.getElementById('equal').innerText;
+            const out=document.getElementById('input');
+            out.value=equal;
+          
+        });
+
+    </script>
+
+</body>
+
+</html>
