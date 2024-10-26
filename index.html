@@ -78,43 +78,47 @@
        
         document.getElementById('1').addEventListener("click", function(){
             const out=document.getElementById('input');
-            out.value=parseInt('1');
+            out.value=parseFloat('1');
         });
         document.getElementById('2').addEventListener("click", function(){
             const out=document.getElementById('input');
-            out.value=parseInt('2');
+            out.value=parseFloat('2');
         });
         document.getElementById('3').addEventListener("click", function(){
             const out=document.getElementById('input');
-            out.value=parseInt('3');
+            out.value=parseFloat('3');
         });
         document.getElementById('4').addEventListener("click", function(){
             const out=document.getElementById('input');
-            out.value=parseInt('4');
+            out.value=parseFloat('4');
         });
         document.getElementById('5').addEventListener("click", function(){
             const out=document.getElementById('input');
-            out.value=parseInt('5');
+            out.value=parseFloat('5');
         });
         document.getElementById('6').addEventListener("click", function(){
             const out=document.getElementById('input');
-            out.value=parseInt('6');
+            out.value=parseFloat('6');
         });
         document.getElementById('7').addEventListener("click", function(){
             const out=document.getElementById('input');
-            out.value=parseInt('7');
+            out.value=parseFloat('7');
         });
         document.getElementById('8').addEventListener("click", function(){
             const out=document.getElementById('input');
-            out.value=parseInt('8');
+            out.value=parseFloat('8');
         });
         document.getElementById('9').addEventListener("click", function(){
             const out=document.getElementById('input');
-            out.value=parseInt('9');
+            out.value=parseFloat('9');
         });
         document.getElementById('0').addEventListener("click", function(){
             const out=document.getElementById('input');
-            out.value=parseInt('0');
+            out.value=parseFloat('0');
+        });
+        document.getElementById('00').addEventListener("click", function(){
+            const out=document.getElementById('input');
+            out.value=parseFloat('00');
         });
         
 
@@ -131,6 +135,30 @@
             const equal=document.getElementById('equal').innerText;
             const out=document.getElementById('input');
             out.value=equal;
+          
+        });
+        document.getElementById('min').addEventListener("click", function min(){
+            const min=document.getElementById('min').innerText;
+            const out=document.getElementById('input');
+            out.value=min;
+          
+        });
+        document.getElementById('mul').addEventListener("click", function mul(){
+            const mul=document.getElementById('mul').innerText;
+            const out=document.getElementById('input');
+            out.value=mul;
+          
+        });
+        document.getElementById('div').addEventListener("click", function div(){
+            const div=document.getElementById('div').innerText;
+            const out=document.getElementById('input');
+            out.value=div;
+          
+        });
+        document.getElementById('mod').addEventListener("click", function mod(){
+            const mod=document.getElementById('mod').innerText;
+            const out=document.getElementById('input');
+            out.value=mod;
           
         });
 
